@@ -1,0 +1,9 @@
+<div class="list-images">
+  <div *ngFor="let item of avatars">
+    <img   [src]="'https://i.pravatar.cc/150?img='+ item"  (click)="selectedId = item" />
+    <div class="actions">
+    <span (click)="addToFavorites(item)">❤️</span>
+    <span (click)="removeFavorite(item)">🗑️</span>
+    </div>
+  </div>
+</div>

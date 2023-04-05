@@ -1,0 +1,9 @@
+:host {
+  justify-content: center;
+  display: flex;
+}
+img {
+    transition: ease-in-out 0.8s;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}

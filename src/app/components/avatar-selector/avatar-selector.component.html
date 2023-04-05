@@ -1,0 +1,9 @@
+<div class="selector">
+  <app-avatar-preview [id]="avatarListContext.selectedId" />
+  <app-avatar-list #avatarListContext="avatarListContext"/>
+</div>
+
+<div class="favorites" >
+  <img *ngFor="let fav of avatarListContext.favorites" class="favorite"  [src]="'https://i.pravatar.cc/150?img='+ fav"  />
+</div>
+
